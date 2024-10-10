@@ -6,6 +6,7 @@ import { PiSuitcaseSimpleFill } from "react-icons/pi";
 import { ImCoinDollar } from "react-icons/im";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import SessionsByCountry from "./SessionsByCountry";
+import RecentOrders from "./RecentOrders";
 
 
 const AdminHome = () => {
@@ -13,8 +14,8 @@ const AdminHome = () => {
     <section>
           {/* admin header */}
           
-          <div className="flex items-center justify-between gap-[400px] mx-auto">
-              <h1>Welcome</h1>
+          <div className="flex items-center justify-between gap-[400px] mx-auto py-5">
+              <h1 className="pl-4">Welcome</h1>
               
               <div className="flex items-center justify-between gap-2">
    
@@ -199,6 +200,8 @@ const AdminHome = () => {
               </div>
               
           </div>
+
+         <RecentOrders className=""/>
     </section>
   )
 }
