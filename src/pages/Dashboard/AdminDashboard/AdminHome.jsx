@@ -85,7 +85,7 @@ const AdminHome = () => {
               
               <div className="col-span-4 ">
                   <h2 className="bg-[#f9bea6] p-2 ml-5 rounded-md mb-5 text-sm">
-                  We regret to inform you thatt, our server is experiencing few technical difficulties.
+                  We regret to inform you that, our server is experiencing few technical difficulties.
 
                   </h2>
                  
