@@ -67,7 +67,7 @@ const OrdersTable = () => {
             </tr>
             <tr>
               <td className="text-xs">#RB8652</td>
-              <td>18/9/2024</td>
+              <td className="text-xs">18/9/2024</td>
               <td><img className="w-[60px]" src="https://pngimg.com/uploads/soup/soup_PNG71.png" alt="soups" /></td>
               <td className="text-xs">William J. Cook</td>
               <td className="text-xs">(+9)5446-150</td>

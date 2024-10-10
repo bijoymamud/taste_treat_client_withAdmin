@@ -14,6 +14,8 @@ import OurMenu from "../pages/OurMenu/OurMenu";
 import SignUp from "../pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoutes";
 import AdminHome from "../pages/Dashboard/AdminDashboard/AdminHome";
+import AddProduct from "../pages/Dashboard/AdminDashboard/AddItems";
+import AddItems from "../pages/Dashboard/AdminDashboard/AddItems";
 
 
 
@@ -74,6 +76,10 @@ export const router = createBrowserRouter([
       {
         path: 'adminhome',
         element: <AdminHome/>
+      },
+      {
+        path: 'addItems',
+        element: <AddItems/>
       }
     ]
   }
