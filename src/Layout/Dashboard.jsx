@@ -31,11 +31,11 @@ const Dashboard = () => {
             {
               isAdmin ? <>
 
-                <li><Link to="/dashboard/adminhome" className=""><HiOutlineHomeModern className="text-lg font-bold" />Admin Home</Link></li>
-                <li><Link to="/dashboard/addItems"><FaUtensils className="text-lg" />Add Items</Link></li>
-                <li><Link to="/dashboard/manageItems"><MdManageSearch className="text-lg" /> Manage Items</Link></li>
-                <li><Link to="/dashboard/maanageBookings"><MdOutlineManageHistory className="text-lg" />Manage Bookings</Link></li>
-                <li><Link to="/dashboard/allUsers"><MdManageAccounts className="text-lg" />All Users</Link></li>
+                <li><Link to="/dashboard/adminhome"><HiOutlineHomeModern className="text-lg font-bold text-black" />Admin Home</Link></li>
+                <li><Link to="/dashboard/addItems"><FaUtensils className="text-lg font-bold text-black" />Add Items</Link></li>
+                <li><Link to="/dashboard/manageItems"><MdManageSearch className="text-lg font-bold text-black" /> Manage Items</Link></li>
+                <li><Link to="/dashboard/manageItems"><MdOutlineManageHistory className="text-lg font-bold text-black" />Manage Bookings</Link></li>
+                <li><Link to="/dashboard/allUsers"><MdManageAccounts className="text-lg font-bold text-black" />All Users</Link></li>
 
 
               </> :

@@ -16,6 +16,7 @@ import PrivateRoute from "./PrivateRoutes";
 import AdminHome from "../pages/Dashboard/AdminDashboard/AdminHome";
 import AddProduct from "../pages/Dashboard/AdminDashboard/AddItems";
 import AddItems from "../pages/Dashboard/AdminDashboard/AddItems";
+import ManageItems from "../pages/Dashboard/AdminDashboard/ManageItems";
 
 
 
@@ -80,6 +81,10 @@ export const router = createBrowserRouter([
       {
         path: 'addItems',
         element: <AddItems/>
+      },
+      {
+        path: 'manageItems',
+        element: <ManageItems/>
       }
     ]
   }
