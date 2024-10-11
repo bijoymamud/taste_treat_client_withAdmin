@@ -1,8 +1,8 @@
 import { FaCalendar, FaUtensils, FaWallet } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
-import { MdLibraryBooks, MdManageAccounts, MdManageSearch, MdOutlineManageHistory } from "react-icons/md";
+import { MdLibraryBooks, MdManageAccounts, MdManageSearch } from "react-icons/md";
 import { HiOutlineHomeModern } from "react-icons/hi2";
-import { RiHome2Fill, RiShoppingCart2Fill } from "react-icons/ri";
+import { RiShoppingCart2Fill } from "react-icons/ri";
 import { Link, Outlet } from "react-router-dom";
 import useCart from "../hooks/useCart";
 
@@ -12,7 +12,7 @@ const Dashboard = () => {
 
 
   //todo
-  const isAdmin = true;
+  const isAdmin = false;
 
   return (
     <section>
@@ -32,7 +32,7 @@ const Dashboard = () => {
               isAdmin ? <>
 
                 <li className="mb-1"><Link to="/dashboard/adminhome" ><HiOutlineHomeModern className="text-lg font-bold text-black" />Admin Home</Link></li>
-                
+
                 <li className="mb-1"><Link to="/dashboard/addItems"><FaUtensils className="text-lg font-bold text-black" />Add Items</Link></li>
 
                 <li className="mb-1"><Link to="/dashboard/manageItems"><MdManageSearch className="text-lg font-bold text-black" /> Manage Items</Link></li>

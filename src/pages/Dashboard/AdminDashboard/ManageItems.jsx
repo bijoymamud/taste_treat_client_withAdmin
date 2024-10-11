@@ -53,7 +53,7 @@ const ManageItems = () => {
   };
 
   return (
-    <section>
+    <section className="py-10">
       <h1 className="px-5 text-2xl font-bold pb-5">Manage Items:</h1>
 
       <div className="grid grid-cols-3 gap-5 p-5">
