@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FileUploader } from "react-drag-drop-files";
 import { FaTrash } from "react-icons/fa";
 import { ImFolderUpload } from "react-icons/im";
 
 const fileTypes = ["JPG", "PNG", "GIF"];
 
-const ImageUploadComponent = () => {
+const EditItems = () => {
   const [file, setFile] = useState(null);
   const [imageUrl, setImageUrl] = useState("https://semantic-ui.com/images/wireframe/image.png"); // Default image before upload
 
@@ -21,7 +21,7 @@ const ImageUploadComponent = () => {
 
   return (
       <section className="pt-10 ">
-          <h2 className="text-2xl font-bold pb-5">Add Items</h2>
+          <h2 className=" text-2xl font-bold pb-5">Update Items</h2>
       <div className="flex justify-center items-center mb-8">
         {/* Left side with image, file name, and delete button */}
         <div className="relative w-64 mr-8">
@@ -48,7 +48,7 @@ const ImageUploadComponent = () => {
 
         {/* Right side for file upload */}
         <div className="drop-shadow-lg rounded-lg p-5 w-full max-w-lg flex-shrink-0">
-          <h1 className="py-2 bg-gray-100 mb-3 px-2 rounded-sm">Upload Item Photo</h1>
+          <h1 className="py-2 bg-gray-100 mb-3 px-2 rounded-sm">Re-Select Item Photo</h1>
           <FileUploader
             handleChange={handleChange}
             name="file"
@@ -177,4 +177,5 @@ const ImageUploadComponent = () => {
   );
 };
 
-export default ImageUploadComponent;
+export default EditItems;
+

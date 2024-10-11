@@ -14,9 +14,10 @@ import OurMenu from "../pages/OurMenu/OurMenu";
 import SignUp from "../pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoutes";
 import AdminHome from "../pages/Dashboard/AdminDashboard/AdminHome";
-import AddProduct from "../pages/Dashboard/AdminDashboard/AddItems";
+// import AddProduct from "../pages/Dashboard/AdminDashboard/AddItems";
 import AddItems from "../pages/Dashboard/AdminDashboard/AddItems";
 import ManageItems from "../pages/Dashboard/AdminDashboard/ManageItems";
+import EditItems from "../pages/Dashboard/AdminDashboard/EditItems";
 
 
 
@@ -85,6 +86,10 @@ export const router = createBrowserRouter([
       {
         path: 'manageItems',
         element: <ManageItems/>
+      },
+      {
+        path: 'editItems',
+        element: <EditItems/>
       }
     ]
   }
