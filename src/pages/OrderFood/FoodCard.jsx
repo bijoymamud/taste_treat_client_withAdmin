@@ -53,11 +53,11 @@ const FoodCard = ({ item }) => {
 
   return (
     <section>
-      <div className="card md:w-full md:h-[550px] glass">
+      <div className="card md:w-full md:h-[520px] glass">
         <figure>
           <img className="w-full h-[300px]" src={image} alt={`${name} Image`} />
         </figure>
-        <div className="card-body md:max-h-64">
+        <div className="card-body md:max-h-64 px-4 pb-3 ">
           <h2 className="card-title">{name}</h2>
           <p className="bg-amber-500 text-white absolute right-0 top-0 mr-4 mt-4 p-1 rounded-md cursor-pointer">
             ${price}
@@ -66,7 +66,7 @@ const FoodCard = ({ item }) => {
           <div className="card-actions justify-end">
             <button
               onClick={() => handleAddToCart(item)}
-              className="relative py-2 px-3 bg-black text-white border hover:border-gray-300 rounded-md mx-auto text-base font-bold cursor-pointer group overflow-hidden"
+              className="relative py-2 mt-5 px-3 bg-black text-white border hover:border-gray-300 rounded-md mx-auto text-base font-bold cursor-pointer group overflow-hidden"
               aria-label={`Add ${name} to cart`}
             >
               Add To Cart

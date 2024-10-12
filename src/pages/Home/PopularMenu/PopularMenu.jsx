@@ -34,7 +34,7 @@ const PopularMenu = () => {
       
 
       <Link to='/order/salad'>
-        <Button  value={ 'View Full Menu'} />
+        <Button  value={ 'View Menu'} />
       </Link>
       
 
