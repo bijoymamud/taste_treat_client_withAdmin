@@ -6,13 +6,13 @@ const SecondBanner = () => {
       <div className="hero min-h-96 " style={{ backgroundImage: 'url(https://i.postimg.cc/Pf6dzRHm/chef-service.jpg) ' }}>
         <div className="hero-overlay bg-opacity-70"></div>
         <div className="hero-content text-center text-neutral-content " >
-          <div style={{ borderRadius: '200px 200px 200px 0' }} className="max-w-6xl rounded-md md:rounded-none  md:h-60 md:py-10 bg-opacity-80 bg-white ">
+          <div  className="max-w-6xl rounded-md md:rounded-none  md:h-60 md:py-10 bg-opacity-70 bg-white ">
             {/* 
             <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
               <span className="relative text-white">Taste Treasure</span>
             </span> */}
 
-            <h3 className=" text-amber-500 text-3xl mt-5 md:mt-0 md:text-5xl font-extrabold ">Taste Treasure</h3>
+            <h3 className=" text-amber-600 text-3xl mt-5 md:mt-0 md:text-5xl font-extrabold ">Taste Treasure</h3>
 
 
 

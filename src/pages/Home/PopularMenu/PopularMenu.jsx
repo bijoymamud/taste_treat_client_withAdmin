@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import useMenu from "../../../hooks/useMenu";
 import MenuItems from "../../Shared/MenuItems/MenuItems";
+import Button from "../../../components/Button/Button";
 
 
 const PopularMenu = () => {
@@ -14,7 +15,7 @@ const PopularMenu = () => {
 
 
   return (
-    <section className="">
+    <section className="pb-10">
 
       <SectionTitle subHeading={"Check it Out"}
         heading={"FROM OUR MENU"}>
@@ -30,7 +31,13 @@ const PopularMenu = () => {
           ></MenuItems>)
         }
       </div>
-      <div className=" text-center "><Link to='/order/salad' className="uppercase btn btn-secondary   bg-gradient-to-r md:mt-2 hover:from-yellow-500 hover:to-pink-500  border-none from-green-400 to-blue-500">View  Full Menu</Link></div>
+      
+
+      <Link to='/order/salad'>
+        <Button  value={ 'View Full Menu'} />
+      </Link>
+      
+
     </section>
   );
 };

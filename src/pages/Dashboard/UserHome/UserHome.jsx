@@ -16,7 +16,7 @@ export default function UserHome() {
   return (
     <div className="">
       <div className="container mx-auto p-6">
-        <h1 className="text-3xl font-bold mb-6">Welcome back, John!</h1>
+        <h1 className="text-3xl font-bold mb-6">Welcome back !</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* User Info Card */}
           <div className="card bg-base-100 drop-shadow-xl md:col-span-2">
@@ -78,7 +78,7 @@ export default function UserHome() {
           </div>
 
           {/* Recent Orders Card */}
-          <div className="card bg-base-100 shadow-xl md:col-span-2">
+          <div className="card bg-base-100 drop-shadow-xl md:col-span-2">
             <div className="card-body">
               <h2 className="card-title">Recent Orders</h2>
               <div className="space-y-4">
@@ -129,12 +129,13 @@ export default function UserHome() {
           </div>
 
           {/* Loyalty Program Card */}
-          <div className="card bg-base-100 shadow-xl md:col-span-3">
+          <div className="card bg-base-100 drop-shadow-xl md:col-span-3">
             <div className="card-body">
               <h2 className="card-title">Loyalty Program</h2>
               <p className="text-base-content/60">You're 3 orders away from your next reward!</p>
-              <progress className="progress progress-primary w-full" value="70" max="100"></progress>
-              <div className="mt-2 flex justify-between text-sm text-base-content/60">
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-2.5 rounded-full" style={{ width: '70%' }}></div>
+              </div>              <div className="mt-2 flex justify-between text-sm text-base-content/60">
                 <span>0 orders</span>
                 <span>10 orders</span>
               </div>

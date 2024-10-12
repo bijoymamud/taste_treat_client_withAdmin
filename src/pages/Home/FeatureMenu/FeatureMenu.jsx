@@ -1,3 +1,4 @@
+import Button from "../../../components/Button/Button";
 import SectionTitleTwo from "../../../components/SectionTitle/SectionTitleTwo";
 
 const FeatureMenu = () => {
@@ -23,7 +24,8 @@ const FeatureMenu = () => {
                 <p className="md:text-start mb-5 text-amber-500">20 March, 2024</p>
                 <h2 className="md:text-start mb-2 font-extrabold text-xl text-amber-500">WHERE CAN I GET SOME?</h2>
                 <p className="md:text-start  text-white mb-10 ">Too busy to dine in? Simply hop onto our website at TASTE TREASURE, or download our user-friendly app from the App Store or Google Play. Prefer the personal touch? Give us a ring at (123) 456-7890, and we'll have your order ready for pickup in no time.</p>
-                <button className="btn btn-secondary   bg-gradient-to-r mt-2 from-yellow-500 to-pink-500 md:flex border-none hover:from-green-400 hover:to-blue-500">READ MORE</button>
+                <button className="btn btn-secondary   bg-gradient-to-br mt-2 from-yellow-400 to-amber-700 md:flex border-none hover:from-green-400 hover:to-blue-500">READ MORE</button>
+                
               </div>
             </div>
 

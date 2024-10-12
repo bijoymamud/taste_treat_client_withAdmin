@@ -88,7 +88,7 @@ const Navbar = () => {
               <label tabIndex={0} className=" ">
                 {user &&
                   <div className="tooltip  tooltip-left  mt-2 " data-tip={user.displayName}>
-                    <button >  <img className=' mb-1 h-[30px] w-[30px] rounded-full' src={user?.photoURL} alt="" /> </button>
+                    <button >  <img className=' mb-1 h-[40px] border-2 border-amber-500 w-[40px] rounded-full' src={user?.photoURL} alt="" /> </button>
                   </div>
                 }
               </label>
