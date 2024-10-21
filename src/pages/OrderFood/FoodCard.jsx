@@ -65,6 +65,12 @@ const FoodCard = ({ item }) => {
           <p className="w-full text-sm text-gray-500">{recipe}</p>
           <div className="card-actions justify-end">
             <button
+              
+
+
+
+
+              
               onClick={() => handleAddToCart(item)}
               className="relative py-2 mt-5 px-3 bg-black text-white border hover:border-gray-300 rounded-md mx-auto text-base font-bold cursor-pointer group overflow-hidden"
               aria-label={`Add ${name} to cart`}

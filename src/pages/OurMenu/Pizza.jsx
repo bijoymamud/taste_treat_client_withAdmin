@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import useMenu from "../../hooks/useMenu";
 import SinglePizza from "./SinglePizza";
+import Button from "../../components/Button/Button";
 
 
 const Pizza = ({ title }) => {
@@ -43,7 +44,11 @@ const Pizza = ({ title }) => {
         }
       </div>
 
-      <div className=" text-center "><Link to={`/order/${title}`} className="uppercase btn btn-secondary   bg-gradient-to-r md:mt-2 hover:from-yellow-500 hover:to-pink-500  border-none from-green-400 to-blue-500">Order now</Link></div>
+      <div className=" text-center ">
+      <Link to={`/order/${title}`}>
+        <Button  value={ 'Order Now'} />
+      </Link>
+      </div>
 
     </section>
   );

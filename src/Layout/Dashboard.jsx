@@ -8,11 +8,11 @@ import useCart from "../hooks/useCart";
 
 const Dashboard = () => {
 
-  // const [cart] = useCart();
+  const [cart] = useCart();
 
 
   //todo
-  const isAdmin = false;
+  const isAdmin = true;
 
   return (
     <section>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import useMenu from "../../hooks/useMenu";
 import SingleDisserts from "./SingleDisserts";
+import Button from "../../components/Button/Button";
 
 
 const Defferts = ({ title }) => {
@@ -49,7 +50,14 @@ const Defferts = ({ title }) => {
           dessert.map((singleDessert) => <SingleDisserts key={singleDessert} singleDessert={singleDessert}></SingleDisserts>)
         }
       </div>
-      <div className=" text-center "><Link to={`/order/${title}`} className="uppercase btn btn-secondary   bg-gradient-to-r  hover:from-yellow-500 hover:to-pink-500  border-none from-green-400 to-blue-500">ORDER NOW</Link></div>
+      <div className=" text-center ">
+        {/* <Link to={`/order/${title}`} className="uppercase btn btn-secondary   bg-gradient-to-r  hover:from-yellow-500 hover:to-pink-500  border-none from-green-400 to-blue-500">ORDER NOW</Link> */}
+
+        <Link to={`/order/${title}`}>
+        <Button  value={ 'Order Now'} />
+      </Link>
+
+      </div>
 
     </section>
   );
